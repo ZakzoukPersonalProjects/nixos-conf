@@ -7,5 +7,6 @@
     discord
     zed-editor
     steam
+    wireshark
   ];
 }
