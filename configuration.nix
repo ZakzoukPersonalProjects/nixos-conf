@@ -42,9 +42,18 @@
   # Enabel the Hyprland Desktop Environment.
   # programs.hyprland = {
   #   enable = true;
-  #   withUWSM = true;
-  #   xwayland.enable = true;
   # };
+
+  # environment.systemPackages = with pkgs; [
+  #   hyprland
+  #   kitty
+  #   waybar
+  #   wofi
+  #   nwg-look
+  # ];
+
+  # Optional, hint Electron apps to use Wayland:
+  # environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
