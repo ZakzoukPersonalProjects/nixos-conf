@@ -12,6 +12,7 @@
     unzip
     zip
     btop
+    nvtopPackages.amd
     wl-clipboard
     pciutils
     net-tools
