@@ -11,7 +11,6 @@
     tree
     unzip
     zip
-    htop
     btop
     wl-clipboard
     pciutils
