@@ -1,8 +1,13 @@
 { ... }:
 
 {
+  imports = [
+    <home-manager/nixos>
+    ./users/users.nix
+  ];
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
-
-  home-manager.users.zakzouk = import ./users/zakzouk/zakzouk.nix;
+  home-manager.sharedModules = [
+    ./common/common.nix
+  ];
 }

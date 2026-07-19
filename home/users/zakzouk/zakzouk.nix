@@ -2,12 +2,17 @@
 
 {
   imports = [
-    ../../common/common.nix
-    ./packages.nix
+    ./user.nix
   ];
 
-  home.username = "zakzouk";
-  home.homeDirectory = "/home/zakzouk";
+  home-manager.users.zakzouk = {
+    imports = [
+      ./packages.nix
+    ];
 
-  home.stateVersion = "26.05";
+    home.username = "zakzouk";
+    home.homeDirectory = "/home/zakzouk";
+
+    home.stateVersion = "26.05";
+  };
 }
