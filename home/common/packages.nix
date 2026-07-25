@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    util-linux
     fastfetch
     ripgrep
     fd
@@ -15,6 +16,9 @@
     wl-clipboard
     copyq
     net-tools
+    texliveFull
+    texlab
+    font-misc-misc
   ];
 
   # Autostart CopyQ on login
