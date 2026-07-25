@@ -21,5 +21,6 @@
     "james-yu.latex-workshop" #Latex Workshop 
     "vscode-icons-team.vscode-icons" #vscode-icons
     "jnoortheen.nix-ide" #Nix IDE
+    "antyos.openscad" #OpenSCAD
   ];
 }
