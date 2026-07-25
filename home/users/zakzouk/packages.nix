@@ -12,6 +12,7 @@
     podman
     podman-compose
     prismlauncher
+    openscad
   ];
 
   programs.vscode.extensions = [
