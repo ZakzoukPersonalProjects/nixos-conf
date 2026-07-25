@@ -13,5 +13,6 @@
     podman-compose
     prismlauncher
     openscad
+    dusklight
   ];
 }
