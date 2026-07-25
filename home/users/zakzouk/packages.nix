@@ -15,7 +15,7 @@
     openscad
   ];
 
-  programs.vscode.extensions = [
+  programs.vscode.profiles.default.extensions = [
     "mhutchie.git-graph" #Git graph
     "mathematic.vscode-latex" #LaTex
     "james-yu.latex-workshop" #Latex Workshop 
