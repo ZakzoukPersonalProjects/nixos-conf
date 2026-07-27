@@ -19,6 +19,7 @@
     texliveFull
     texlab
     font-misc-misc
+    libreoffice
   ];
 
   # Autostart CopyQ on login
