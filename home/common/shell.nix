@@ -10,7 +10,6 @@
       ls = "eza";
       cat = "bat";
       grep = "rg";
-      update = "home-manager switch";
     };
   };
 
