@@ -7,5 +7,6 @@
     ./gnome.nix
     ./shell.nix
     ./terminal.nix
+    # ./hyprland.nix
   ];
 }

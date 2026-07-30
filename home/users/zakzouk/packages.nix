@@ -14,5 +14,6 @@
     prismlauncher
     openscad
     dusklight
+    logseq
   ];
 }

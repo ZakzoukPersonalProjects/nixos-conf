@@ -28,30 +28,20 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
   console.useXkbConfig = true;
 
-  # Enable the GNOME Desktop Environment.
+  # WM conf
+  services.xserver.enable = true; # X11 windowing system
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
 
-  # Enabel the Hyprland Desktop Environment.
-  # programs.hyprland = {
-  #   enable = true;
-  # };
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
 
-  # environment.systemPackages = with pkgs; [
-  #   hyprland
-  #   kitty
-  #   waybar
-  #   wofi
-  #   nwg-look
-  # ];
-
-  # Optional, hint Electron apps to use Wayland:
-  # environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  services.displayManager.defaultSession = "hyprland";
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -115,4 +105,9 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   programs.steam.enable = true;
+
+  # Insecure packages are not allowed by default, but you can allow them here.
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-39.8.10"
+  ];
 }
