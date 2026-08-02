@@ -20,6 +20,16 @@
     texlab
     font-misc-misc
     libreoffice
+
+    # Programming languages
+    dotnet-sdk_11
+    maven
+    cargo
+    openjdk25
+    nodejs_26
+    python3
+    gcc
+    gdb
   ];
 
   # Autostart CopyQ on login
