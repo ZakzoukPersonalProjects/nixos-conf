@@ -35,13 +35,13 @@
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  # programs.hyprland = {
+  #   enable = true;
+  #   xwayland.enable = true;
+  # };
 
-  services.displayManager.defaultSession = "hyprland";
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  # services.displayManager.defaultSession = "hyprland";
+  # environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
