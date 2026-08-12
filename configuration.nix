@@ -9,12 +9,13 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./home/home.nix
+      ./gdm/gdm.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.systemd-boot.configurationLimit = 3;
+  boot.loader.systemd-boot.configurationLimit = 5;
 
   networking.hostName = "zakzouk"; # Define your hostname.
 
@@ -29,19 +30,6 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   console.useXkbConfig = true;
-
-  # WM conf
-  services.xserver.enable = true; # X11 windowing system
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
-
-  # programs.hyprland = {
-  #   enable = true;
-  #   xwayland.enable = true;
-  # };
-
-  # services.displayManager.defaultSession = "hyprland";
-  # environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
