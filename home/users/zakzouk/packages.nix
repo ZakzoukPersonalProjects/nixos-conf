@@ -15,5 +15,6 @@
     openscad
     dusklight
     logseq
+    discord
   ];
 }
