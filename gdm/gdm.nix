@@ -8,4 +8,6 @@
     ./hyprland/hyprland.nix
     # ./niri/niri.nix
   ];
+
+  services.displayManager.defaultSession = "gnome";
 }
