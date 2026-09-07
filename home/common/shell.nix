@@ -1,4 +1,4 @@
-{ ... }:
+{lib, pkgs, ... }:
 
 {
   programs.bash = {
@@ -11,6 +11,14 @@
       cat = "bat";
       grep = "rg";
     };
+
+    bashrcExtra = ''
+      export PATH="$PATH:$HOME/.cargo/bin"
+    '';
+
+    initExtra = ''
+      jaaj-rs
+    '';
   };
 
   programs.direnv = {

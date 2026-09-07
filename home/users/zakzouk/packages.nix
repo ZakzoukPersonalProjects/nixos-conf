@@ -16,5 +16,6 @@
     dusklight
     logseq
     discord
+    presenterm
   ];
 }

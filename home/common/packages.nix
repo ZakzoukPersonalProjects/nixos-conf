@@ -2,6 +2,8 @@
 
 {
   home.packages = with pkgs; [
+    zig
+    lufus
     kitty
     gtk3
     util-linux
@@ -22,9 +24,13 @@
     texlab
     font-misc-misc
     libreoffice
+    krita
 
     # Programming languages
-    dotnet-sdk_11
+    (dotnetCorePackages.combinePackages [
+      dotnetCorePackages.sdk_8_0
+      dotnetCorePackages.sdk_11_0
+    ])
     maven
     cargo
     openjdk25
