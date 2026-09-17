@@ -24,6 +24,7 @@
     font-misc-misc
     libreoffice
     krita
+    superfile
 
     # Programming languages
     (dotnetCorePackages.combinePackages [
