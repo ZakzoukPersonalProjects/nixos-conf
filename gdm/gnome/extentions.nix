@@ -1,13 +1,15 @@
 {pkgs, ...}:
 
 {
-  environment.systemPackages = with pkgs; [
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.vitals
-    gnomeExtensions.clipboard-indicator
-    gnomeExtensions.removable-drive-menu
-    gnomeExtensions.coverflow-alt-tab
-    gnomeExtensions.burn-my-windows
-    gnomeExtensions.tiling-shell
+  environment.systemPackages = with pkgs.gnomeExtensions; [
+    blur-my-shell
+    vitals
+    clipboard-indicator
+    removable-drive-menu
+    coverflow-alt-tab
+    burn-my-windows
+    tiling-shell
+    gnome-wallpaper-engine
+    screencast-extra-feature
   ];
 }
