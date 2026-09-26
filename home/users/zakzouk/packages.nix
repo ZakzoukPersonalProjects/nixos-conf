@@ -8,7 +8,6 @@
     steam
     wireshark
     rmpc
-    winboat
     podman
     podman-compose
     prismlauncher

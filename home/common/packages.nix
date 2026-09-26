@@ -25,6 +25,9 @@
     libreoffice
     krita
     superfile
+    ffmpeg
+    mpv
+    wine
 
     # Programming languages
     (dotnetCorePackages.combinePackages [
