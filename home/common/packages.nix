@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs; [
     zig
-    lufus
     kitty
     gtk3
     util-linux
@@ -41,5 +40,6 @@
     python3
     gcc
     gdb
+    rustc
   ];
 }
