@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./drivers/drivers.nix
       ./home/home.nix
       ./gdm/gdm.nix
     ];
