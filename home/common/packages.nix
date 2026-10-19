@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    gparted
     zig
     kitty
     gtk3
@@ -26,7 +27,8 @@
     superfile
     ffmpeg
     mpv
-    wine
+    wine64
+    podman
 
     # Programming languages
     (dotnetCorePackages.combinePackages [
@@ -37,7 +39,12 @@
     cargo
     openjdk25
     nodejs_26
-    python3
+    (python3.withPackages (ps: with ps; [
+      numpy
+      pandas
+      matplotlib
+      pyspark
+    ]))
     gcc
     gdb
     rustc
